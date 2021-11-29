@@ -11,4 +11,8 @@
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
 
+### **[JS and CSS Clock](https://isbendiyarovanezrin.github.io/AnalogClock.github.io "Click Me!")**
+
+![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
+
 </div>
