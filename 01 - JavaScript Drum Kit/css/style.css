@@ -21,37 +21,51 @@ body {
 }
 
 .key {
+  padding: 0.5rem;
   user-select: none;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 5.6rem;
-  height: 5.6rem;
+  width: 10rem;
   border-radius: 4px;
   transition: all 0.1s ease;
-  border: 2.5px solid #000000e1;
-  background-color: #ffd90054;
+  border: 0.3rem solid #000000e1;
+  background-color: #272727bf;
 }
 
 kbd {
-  font: 600 2.5rem cursive;
-  color: #000000e1;
+  font: 3.5rem cursive;
+  color: #fffffff1;
+}
+
+.sound {
+  color: #ffd700;
+  text-transform: uppercase;
+  font: 1.3rem sans-serif;
+  padding-bottom: 1rem;
 }
 
 .playing {
   transform: scale(1.1);
-  border: 3px solid #ffd700;
-  box-shadow: 0.5px 0.5px 6px #292626d8;
+  border: 0.4rem solid #ffd700;
+  box-shadow: 0.1rem 0.1rem 1rem #ffd900b6;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
   html {
     font-size: 7px;
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 690px) {
   html {
     font-size: 5px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  html {
+    font-size: 3.1px;
   }
 }
