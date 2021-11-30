@@ -15,4 +15,8 @@
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
 
+### **[Playing with CSS Variables and JS](https://isbendiyarovanezrin.github.io/PlayingWithCSSVariablesAndJS "Click Me!")**
+
+![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
+
 </div>
