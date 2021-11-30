@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --spacing: 0px;
+  --blur: 0px;
+  --color: #461301;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font: 600 3rem "Patrick Hand", cursive;
+  background: url(../img/nature.jpeg) right top/cover no-repeat #46130181;
+  background-blend-mode: darken;
+}
+
+.container {
+  margin: 2rem;
+}
+
+img {
+  width: 65%;
+  height: 65vh;
+  margin-top: 2rem;
+  object-fit: cover;
+  user-select: none;
+  padding: var(--spacing);
+  background-color: #4613018c;
+  border: 1.8rem solid var(--color);
+  filter: blur(var(--blur)) contrast(110%);
+}
+
+input {
+  margin-right: 1.5rem;
+}
+
+input[type="range"] {
+  accent-color: var(--color);
+}
+
+::selection {
+  color: #f5f5f5;
+  background-color: var(--color);
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 8px;
+  }
+
+  img {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  html {
+    font-size: 6px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  img {
+    margin-top: 2.4rem;
+    height: 55vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  img {
+    width: 95%;
+    height: 45vh;
+  }
+}

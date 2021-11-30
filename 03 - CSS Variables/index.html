@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Playing with CSS Variables and JS</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/flower.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <label for="spacing">Spacing:</label>
+      <input
+        type="range"
+        name="spacing"
+        min="0"
+        max="40"
+        value="0"
+        data-size="px"
+      />
+
+      <label for="blur">Blur:</label>
+      <input
+        type="range"
+        name="blur"
+        min="0"
+        max="15"
+        value="0"
+        data-size="px"
+      />
+
+      <label for="color">Color:</label>
+      <input type="color" name="color" value="#461301" />
+
+      <img src="img/nature.jpeg" alt="nature photo" />
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
