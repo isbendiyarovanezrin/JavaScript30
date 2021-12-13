@@ -7,11 +7,11 @@
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
 
-### **[JavaScript Drum Kit](https://isbendiyarovanezrin.github.io/JavaScriptDrumKit.github.io "Click Me!")**
+### **[JavaScript Drum Kit](https://isbendiyarovanezrin.github.io/JavaScriptDrumKit "Click Me!")**
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
 
-### **[JS and CSS Clock](https://isbendiyarovanezrin.github.io/AnalogClock.github.io "Click Me!")**
+### **[JS and CSS Clock](https://isbendiyarovanezrin.github.io/AnalogClock "Click Me!")**
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
 
