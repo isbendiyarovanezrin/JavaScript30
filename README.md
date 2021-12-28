@@ -19,4 +19,8 @@
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
 
+### **[Flex Panel Gallery](https://isbendiyarovanezrin.github.io/FlexPanelGallery "Click Me!")**
+
+![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
+
 </div>
