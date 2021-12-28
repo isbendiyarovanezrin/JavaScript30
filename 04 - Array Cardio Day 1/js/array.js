@@ -65,7 +65,6 @@ const people = [
 const a = inventors.filter(
   (inventor) => inventor.year < 1600 && 1500 <= inventor.year
 );
-
 console.table(a);
 
 // Array.prototype.map()
