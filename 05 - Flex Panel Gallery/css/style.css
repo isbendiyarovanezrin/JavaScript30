@@ -112,6 +112,11 @@ body {
   background-blend-mode: multiply;
 }
 
+::selection {
+  color: #f0e5f0;
+  background-color: #eea8d7;
+}
+
 @media screen and (max-width: 1050px) {
   html {
     font-size: 8px;
