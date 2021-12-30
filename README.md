@@ -27,4 +27,8 @@
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
 
+### **[Array Cardio Day 2](https://github.com/isbendiyarovanezrin/JavaScript30/tree/master/07%20-%20Array%20Cardio%20Day%202#readme "Click me!")**
+
+![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
+
 </div>
