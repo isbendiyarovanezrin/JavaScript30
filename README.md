@@ -19,6 +19,10 @@
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
 
+### **[Array Cardio Day 1](https://github.com/isbendiyarovanezrin/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201#readme "Click me!")**
+
+![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
+
 ### **[Flex Panel Gallery](https://isbendiyarovanezrin.github.io/FlexPanelGallery "Click me!")**
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
