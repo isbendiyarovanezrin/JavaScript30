@@ -23,4 +23,8 @@
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
 
+### **[Ajax Type Ahead](https://isbendiyarovanezrin.github.io/AjaxTypeAhead "Click Me!")**
+
+![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
+
 </div>
