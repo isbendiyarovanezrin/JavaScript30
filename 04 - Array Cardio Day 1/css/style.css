@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffc83d;
+}
+
+p {
+  margin: 20px;
+  color: #8e562e;
+  font: italic 500 20px Cambria, Cochin, Georgia, serif;
+}
+
+::selection {
+  color: #fff;
+  background-color: #8e562e;
+}
