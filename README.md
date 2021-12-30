@@ -7,23 +7,23 @@
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
 
-### **[JavaScript Drum Kit](https://isbendiyarovanezrin.github.io/JavaScriptDrumKit "Click Me!")**
+### **[JavaScript Drum Kit](https://isbendiyarovanezrin.github.io/JavaScriptDrumKit "Click me!")**
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
 
-### **[JS and CSS Clock](https://isbendiyarovanezrin.github.io/AnalogClock "Click Me!")**
+### **[JS and CSS Clock](https://isbendiyarovanezrin.github.io/AnalogClock "Click me!")**
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
 
-### **[Playing with CSS Variables and JS](https://isbendiyarovanezrin.github.io/PlayingWithCSSVariablesAndJS "Click Me!")**
+### **[Playing with CSS Variables and JS](https://isbendiyarovanezrin.github.io/PlayingWithCSSVariablesAndJS "Click me!")**
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
 
-### **[Flex Panel Gallery](https://isbendiyarovanezrin.github.io/FlexPanelGallery "Click Me!")**
+### **[Flex Panel Gallery](https://isbendiyarovanezrin.github.io/FlexPanelGallery "Click me!")**
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
 
-### **[Ajax Type Ahead](https://isbendiyarovanezrin.github.io/AjaxTypeAhead "Click Me!")**
+### **[Ajax Type Ahead](https://isbendiyarovanezrin.github.io/AjaxTypeAhead "Click me!")**
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
 
