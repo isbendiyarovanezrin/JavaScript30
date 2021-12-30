@@ -35,4 +35,8 @@
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
 
+### **[Fun with HTML5 Canvas](https://isbendiyarovanezrin.github.io/FunWithCanvas "Click me!")**
+
+![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
+
 </div>
