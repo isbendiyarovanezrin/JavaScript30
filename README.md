@@ -39,4 +39,8 @@
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
 
+### **[Video Speed Controller](https://isbendiyarovanezrin.github.io/VideoSpeedController "Click me!")**
+
+![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2)
+
 </div>
