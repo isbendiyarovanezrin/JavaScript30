@@ -1,0 +1,134 @@
+:root {
+  --yellow: #ffb100;
+  --red: #c60900;
+  --white: #fff;
+  --black: #000;
+  --hover-color: #e5ff002c;
+  --box-shadow: 0 0.2rem 1rem #000000b0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: no-repeat 0 33% / cover url(../img/freddie.jpg) var(--yellow);
+  background-blend-mode: darken;
+}
+
+body,
+.container,
+.speed,
+.speed-bar {
+  display: flex;
+}
+
+.video {
+  height: 50rem;
+  width: 41rem;
+  object-fit: cover;
+  box-shadow: var(--box-shadow);
+  border: 1rem solid var(--yellow);
+  background-color: var(--yellow);
+}
+
+video::-webkit-media-controls-panel {
+  transition: 0.7s ease;
+  background-color: var(--hover-color);
+}
+
+video::-webkit-media-controls-timeline {
+  width: 33rem;
+  padding-bottom: 0;
+  border-radius: 2rem;
+  margin: 0 auto 2rem;
+  background-color: var(--yellow);
+}
+
+.speed {
+  width: 4.2rem;
+  border-radius: 5rem;
+  margin: 1rem 0 1rem 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  align-items: flex-start;
+  background-color: var(--red);
+  box-shadow: var(--box-shadow);
+}
+
+.speed-bar {
+  width: 100%;
+  height: 23%;
+  padding: 0.2rem;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  background: var(--yellow);
+  color: var(--white);
+  user-select: none;
+  font-family: sans-serif;
+}
+
+p {
+  color: var(--white);
+  font-family: "Nunito", "Nunito Sans", sans-serif;
+}
+
+.text {
+  position: relative;
+  left: -16%;
+}
+
+p:first-child {
+  font-size: 10rem;
+}
+
+p:last-child {
+  font-size: 6rem;
+  text-indent: 7rem;
+}
+
+::selection {
+  color: var(--black);
+  background-color: var(--yellow);
+}
+
+@media screen and (max-width: 1260px) {
+  .text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 7px;
+  }
+
+  video::-webkit-media-controls-timeline {
+    width: 31rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 5.7px;
+  }
+}
