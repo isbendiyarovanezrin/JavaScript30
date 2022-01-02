@@ -66,6 +66,7 @@ video::-webkit-media-controls-timeline {
   align-items: flex-start;
   background-color: var(--red);
   box-shadow: var(--box-shadow);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .speed-bar {
