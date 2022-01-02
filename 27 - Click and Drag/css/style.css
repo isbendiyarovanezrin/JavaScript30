@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: center / cover fixed url(../img/texture.jfif) #85817b4b;
+  background-blend-mode: color-burn;
+}
+
+.items {
+  width: 100%;
+  height: 60rem;
+  padding-top: 7rem;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  perspective: 65rem;
+  transform: scale(0.98);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.items.active {
+  height: 100vh;
+  background-color: #faf8f641;
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
+
+.item {
+  width: 19rem;
+  height: calc(100% - 6rem);
+  margin-left: -0.3rem;
+  display: inline-flex;
+  background-blend-mode: multiply;
+}
+
+.item:nth-child(even) {
+  transform: scaleX(1.31) rotateY(40deg);
+}
+
+.item:nth-child(odd) {
+  transform: scaleX(1.31) rotateY(-40deg);
+}
+
+.item:first-child {
+  background: 30% / cover url(../img/boy-1.jfif) #daa520;
+}
+
+.item:nth-child(2) {
+  background: 67% 28% / cover url(../img/boy-4.jfif) #9acd32;
+}
+
+.item:nth-child(3) {
+  background: 30% / cover url(../img/boy-8.jfif) #0077ff;
+}
+
+.item:nth-child(4) {
+  background: 55% / cover url(../img/boy-23.jfif) #40e0d0;
+}
+
+.item:nth-child(5) {
+  background: 42% / cover url(../img/boy-5.jfif) #892be2f3;
+}
+
+.item:nth-child(6) {
+  background: 44% / cover url(../img/boy-6.jfif) #ff6347;
+}
+
+.item:nth-child(7) {
+  background: 30% / cover url(../img/boy-13.jfif) #8ecd3f;
+}
+
+.item:nth-child(8) {
+  background: 45% / cover url(../img/boy-21.jfif) #337199;
+}
+
+.item:nth-child(9) {
+  background: 30% / cover url(../img/boy-9.jfif) lightcoral;
+}
+
+.item:nth-child(10) {
+  background: 20% / cover url(../img/boy-12.jfif) #cd853f;
+}
+
+.item:nth-child(11) {
+  background: 47% / cover url(../img/boy-10.jfif) #008080;
+}
+
+.item:nth-child(12) {
+  background: 42% / cover url(../img/boy-18.jfif) #e100ffc2;
+}
+
+.item:nth-child(13) {
+  background: 26% / cover url(../img/boy-14.jfif) #f08080;
+}
+
+.item:nth-child(14) {
+  background: 3% / cover url(../img/boy-2.jfif) #40e0d0;
+}
+
+.item:nth-child(15) {
+  background: 41% / cover url(../img/boy-15.jfif) #7847ff93;
+}
+
+.item:nth-child(16) {
+  background: 70% / cover url(../img/boy-20.jfif) #e04099;
+}
+
+.item:nth-child(17) {
+  background: 34% / cover url(../img/boy-17.jfif) #c8a16d;
+}
+
+.item:nth-child(18) {
+  background: 69% / cover url(../img/boy-7.jfif) #337199;
+}
+
+.item:nth-child(19) {
+  background: 41% / cover url(../img/boy-11.jfif) #ee9191;
+}
+
+.item:nth-child(20) {
+  background: 30% / cover url(../img/boy-19.png) #9acd32;
+}
+
+.item:nth-child(21) {
+  background: 30% / cover url(../img/boy-16.jfif) #008080;
+}
+
+.item:nth-child(22) {
+  background: 50% / cover url(../img/boy-22.jfif) #ce8233;
+}
+
+.item:nth-child(23) {
+  background: 35% / cover url(../img/boy-25.jfif) #9acd32;
+}
+
+.item:nth-child(24) {
+  background: 45% / cover url(../img/boy-24.jfif) #eeafb7;
+}
+
+.item:last-child {
+  background: 54% / cover url(../img/boy-3.jfif) #25aa7b;
+}
