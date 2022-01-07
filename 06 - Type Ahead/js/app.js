@@ -1,7 +1,8 @@
-const json =
-  "https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json";
+"use strict";
 
-fetch(json)
+fetch(
+  "https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json"
+)
   .then((responce) => responce.json())
   .then((data) =>
     data.forEach((element) => {
@@ -52,12 +53,22 @@ function numWithCommas(n) {
 }
 
 // cursor
-let cursor = document.getElementById("cursor");
+const cursor = document.getElementById("cursor");
 
-document.addEventListener("mousemove", (e) => {
+document.addEventListener("mousemove", changeCursor);
+
+function changeCursor(e) {
   let x = e.pageX;
   let y = e.pageY;
 
   cursor.style.left = `${x}px`;
   cursor.style.top = `${y}px`;
+}
+
+document.querySelector(".search-input").addEventListener("mousemove", () => {
+  document.removeEventListener("mousemove", changeCursor);
+});
+
+document.querySelector(".search-input").addEventListener("mouseleave", () => {
+  document.addEventListener("mousemove", changeCursor);
 });

@@ -31,6 +31,27 @@ body {
   overflow-x: hidden;
 }
 
+.custom-shape-divider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 0.2rem);
+  height: 29rem;
+}
+
+.custom-shape-divider-bottom .shape-fill {
+  fill: var(--white-color);
+}
+
 input {
   width: 100%;
   padding: 2rem;
@@ -61,7 +82,7 @@ input {
 }
 
 .search-input[type="search"]::-webkit-search-cancel-button {
-  cursor: none;
+  cursor: pointer;
 }
 
 .suggestions {
@@ -72,7 +93,6 @@ input {
 .suggestions li {
   padding: 2rem;
   display: flex;
-  cursor: text;
   justify-content: space-between;
   text-transform: capitalize;
   transition: all 0.2s linear;
