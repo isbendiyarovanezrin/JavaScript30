@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  border: none;
+  outline: none;
+  cursor: none;
   box-sizing: border-box;
 }
 
@@ -9,7 +12,7 @@ html {
 }
 
 body {
-  background: url(../img/background.jpg) center/cover no-repeat;
+  background: url(../img/background.jpg) center/cover no-repeat #ffd700;
   overflow: hidden;
 }
 
@@ -28,7 +31,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 10rem;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   transition: all 0.1s ease;
   border: 0.3rem solid #000000e1;
   background-color: #272727bf;
@@ -50,6 +53,19 @@ kbd {
   transform: scale(1.1);
   border: 0.4rem solid #ffd700;
   box-shadow: 0.1rem 0.1rem 1rem #ffd900b6;
+}
+
+#cursor {
+  position: absolute;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 100;
+  transition: all 0.1s linear;
+  pointer-events: none;
+  border: 0.2rem solid #ffd700;
+  box-shadow: 0 0 0.2rem #ffd900b6;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 950px) {
