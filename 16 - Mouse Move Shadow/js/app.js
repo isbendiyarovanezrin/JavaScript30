@@ -1,3 +1,5 @@
+"use strict";
+
 const hero = document.querySelector(".hero");
 const text = hero.querySelector(".text");
 let walk = 200; // 200px

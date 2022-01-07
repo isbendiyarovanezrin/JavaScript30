@@ -23,11 +23,42 @@ body {
   min-height: 100vh;
 }
 
+.custom-shape-divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3rem);
+  height: 61rem;
+}
+
+.shape-fill {
+  fill: #ff0000;
+}
+
 .text {
   cursor: text;
   text-transform: uppercase;
   font: 800 90rem "Source Serif Pro", serif;
   text-shadow: 10rem 10rem 0 #ff0000;
+  z-index: 100;
 }
 
 @media screen and (max-width: 800px) {
