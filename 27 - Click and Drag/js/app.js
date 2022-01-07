@@ -1,3 +1,5 @@
+"use strict";
+
 const slider = document.querySelector(".items");
 
 let isDown = false,
