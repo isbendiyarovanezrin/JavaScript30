@@ -1,3 +1,5 @@
+"use strict";
+
 const secondHand = document.querySelector(".second-hand");
 const minHand = document.querySelector(".min-hand");
 const hourHand = document.querySelector(".hour-hand");
@@ -16,3 +18,16 @@ function ticktock() {
 
 setInterval(ticktock, 1000);
 ticktock();
+
+// cursor
+const cursor = document.getElementById("cursor");
+
+document.addEventListener("mousemove", changeCursor);
+
+function changeCursor(e) {
+  const x = e.pageX;
+  const y = e.pageY;
+
+  cursor.style.left = `${x}px`;
+  cursor.style.top = `${y}px`;
+}

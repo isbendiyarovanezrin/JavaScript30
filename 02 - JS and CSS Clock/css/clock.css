@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
 }
 
 html {
@@ -10,10 +11,11 @@ html {
 
 body {
   min-height: 100vh;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(../img/background.jpg) center/cover no-repeat;
+  background: url(../img/background.jpg) center/cover no-repeat #4685eb67;
 }
 
 .clock {
@@ -23,7 +25,7 @@ body {
   border-radius: 50%;
   background-color: #0187d657;
   border: 0.5rem solid #04316e;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: #0000003d 0 0.3rem 0.8rem;
 }
 
 .clock-face {
@@ -35,7 +37,7 @@ body {
 .hand {
   left: 50%;
   position: absolute;
-  border-radius: 50px;
+  border-radius: 5rem;
   transform-origin: 50% 100%;
   background-color: #04316e;
 }
@@ -66,6 +68,19 @@ body {
   border-radius: 50%;
   position: absolute;
   background-color: #04316e;
+}
+
+#cursor {
+  position: absolute;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 100;
+  transition: all 0.1s linear;
+  pointer-events: none;
+  border: 0.2rem solid #04316e;
+  box-shadow: 0 0 0.2rem #094d7899;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 700px) {
