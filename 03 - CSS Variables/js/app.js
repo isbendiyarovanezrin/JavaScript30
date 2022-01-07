@@ -1,3 +1,5 @@
+"use strict";
+
 const inputs = document.querySelectorAll("input");
 
 function changeValue() {
