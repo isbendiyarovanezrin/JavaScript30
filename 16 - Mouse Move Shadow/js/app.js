@@ -7,11 +7,8 @@ let walk = 200; // 200px
 hero.addEventListener("mousemove", shadow);
 
 function shadow(e) {
-  let width = hero.offsetWidth;
-  let height = hero.offsetHeight;
-
-  let x = e.offsetX;
-  let y = e.offsetY;
+  let { offsetWidth: width, offsetHeight: height } = hero;
+  let { offsetX: x, offsetY: y } = e;
 
   if (this !== e.target) {
     x = x + e.target.offsetLeft;
