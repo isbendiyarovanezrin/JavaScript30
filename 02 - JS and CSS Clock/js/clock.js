@@ -31,3 +31,7 @@ function changeCursor(e) {
   cursor.style.left = `${x}px`;
   cursor.style.top = `${y}px`;
 }
+
+// sound
+const song = document.getElementById("song");
+song.play();

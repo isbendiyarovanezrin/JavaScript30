@@ -16,6 +16,21 @@
   </head>
   <body>
     <div id="cursor"></div>
+
+    <embed
+      src="sound/clock_ticking_sound_effect.mp3"
+      loop="true"
+      autostart="true"
+      width="0"
+      height="0"
+    />
+
+    <audio autoplay="true" loop preload="auto" id="song">
+      <source src="sound/clock_ticking_sound_effect.mp3" type="audio/mpeg" />
+      Your browser does not support the
+      <code>audio</code> element.
+    </audio>
+
     <div class="clock">
       <div class="clock-face">
         <div class="hand second-hand"></div>
