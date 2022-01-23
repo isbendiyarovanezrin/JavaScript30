@@ -28,7 +28,7 @@ body {
   user-select: none;
   overflow: hidden;
   white-space: nowrap;
-  cursor: pointer;
+  cursor: grab;
   transition: all 0.2s ease;
   perspective: 65rem;
   transform: scale(0.98);
