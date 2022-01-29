@@ -1,3 +1,13 @@
+:root {
+  --font-family: "Source Serif Pro", serif;
+  --red: #ff0000;
+  --pink: #fed3d3;
+  --yellow: #ffff00;
+  --purple: #9932cc;
+  --blue: #3862e2;
+  --green: #00ff00;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +22,7 @@ html {
 body {
   cursor: url(../img/cursor.png), auto;
   overflow: hidden;
-  background-color: #fed3d3;
+  background-color: var(--pink);
 }
 
 .hero {
@@ -50,14 +60,14 @@ svg {
 }
 
 .shape-fill {
-  fill: #ff0000;
+  fill: var(--red);
 }
 
 .text {
   cursor: text;
   text-transform: uppercase;
-  font: 800 90rem "Source Serif Pro", serif;
-  text-shadow: 10rem 10rem 0 #ff0000;
+  font: 800 90rem var(--font-family);
+  text-shadow: 10rem 10rem 0 var(--red);
   z-index: 100;
 }
 
