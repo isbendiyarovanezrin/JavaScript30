@@ -5,6 +5,8 @@
   --black: #000;
   --hover-color: #e5ff002c;
   --box-shadow: 0 0.2rem 1rem #000000b0;
+  --primary-font-family: sans-serif;
+  --secondary-font-family: "Nunito", "Nunito Sans", sans-serif;
 }
 
 * {
@@ -74,17 +76,17 @@ video::-webkit-media-controls-timeline {
   height: 23%;
   padding: 0.2rem;
   font-size: 1.5rem;
+  user-select: none;
   align-items: center;
   justify-content: center;
-  background: var(--yellow);
   color: var(--white);
-  user-select: none;
-  font-family: sans-serif;
+  background-color: var(--yellow);
+  font-family: var(--primary-font-family);
 }
 
 p {
   color: var(--white);
-  font-family: "Nunito", "Nunito Sans", sans-serif;
+  font-family: var(--secondary-font-family);
 }
 
 .text {
