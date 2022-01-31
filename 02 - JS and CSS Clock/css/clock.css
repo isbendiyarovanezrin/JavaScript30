@@ -1,3 +1,13 @@
+:root {
+  --body-color: #4685eb67;
+  --clock-bg-color: #0187d657;
+  --hand-color: #04316e;
+  --shadow-color1: #0000003d;
+  --shadow-color2: #094d7899;
+  --border-color: #04316e;
+  --dot-color: #04316e;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +25,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(../img/background.jpg) center/cover no-repeat #4685eb67;
+  background: url(../img/background.jpg) center/cover no-repeat
+    var(--body-color);
 }
 
 .clock {
@@ -23,9 +34,9 @@ body {
   height: 35rem;
   position: relative;
   border-radius: 50%;
-  background-color: #0187d657;
-  border: 0.5rem solid #04316e;
-  box-shadow: #0000003d 0 0.3rem 0.8rem;
+  background-color: var(--clock-bg-color);
+  border: 0.5rem solid var(--border-color);
+  box-shadow: var(--shadow-color1) 0 0.3rem 0.8rem;
 }
 
 .clock-face {
@@ -39,7 +50,7 @@ body {
   position: absolute;
   border-radius: 5rem;
   transform-origin: 50% 100%;
-  background-color: #04316e;
+  background-color: var(--hand-color);
 }
 
 .second-hand {
@@ -67,7 +78,7 @@ body {
   height: 1rem;
   border-radius: 50%;
   position: absolute;
-  background-color: #04316e;
+  background-color: var(--dot-color);
 }
 
 #cursor {
@@ -78,8 +89,8 @@ body {
   z-index: 100;
   transition: all 0.1s linear;
   pointer-events: none;
-  border: 0.2rem solid #04316e;
-  box-shadow: 0 0 0.2rem #094d7899;
+  border: 0.2rem solid var(--border-color);
+  box-shadow: 0 0 0.2rem var(--shadow-color2);
   background-color: transparent;
 }
 
