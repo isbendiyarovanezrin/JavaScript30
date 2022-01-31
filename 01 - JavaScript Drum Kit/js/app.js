@@ -1,8 +1,8 @@
 "use strict";
 
-window.addEventListener("keydown", function (i) {
-  const key = document.querySelector(`.key[data-key="${i.key}"]`);
-  const audio = document.querySelector(`audio[data-key="${i.key}"]`);
+window.addEventListener("keydown", function (e) {
+  const key = document.querySelector(`.key[data-key="${e.key}"]`);
+  const audio = document.querySelector(`audio[data-key="${e.key}"]`);
   if (!audio) return;
   audio.currentTime = 0;
   audio.play();
@@ -27,4 +27,15 @@ function changeCursor(e) {
 
   cursor.style.left = `${x}px`;
   cursor.style.top = `${y}px`;
+}
+
+// loader
+$(window).on("load", () => {
+  setTimeout(removeLoader, 1500);
+});
+
+function removeLoader() {
+  $(".cssload-container").fadeOut(500, () => {
+    $(".cssload-container").remove();
+  });
 }
