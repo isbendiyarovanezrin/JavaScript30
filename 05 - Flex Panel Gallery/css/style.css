@@ -1,3 +1,12 @@
+:root {
+  --white: #fdfbfb;
+  --pink: #eea8d7;
+  --box-shadow-clr: #ffffff1a;
+  --text-shadow-clr1: #00000073;
+  --text-shadow-clr2: #000000b8;
+  --font-family: "Amatic SC", cursive;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +18,7 @@ html {
 }
 
 body {
-  font-family: "Amatic SC", cursive;
+  font-family: var(--font-family);
   overflow: hidden;
 }
 
@@ -25,9 +34,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--white);
   background: center/cover;
-  box-shadow: inset 0 0 0 0.3rem #ffffff1a;
+  box-shadow: inset 0 0 0 0.3rem var(--box-shadow-clr);
   /* Safari transitionend event.propertyName === flex */
   /* Chrome + FF transitionend event.propertyName === flex-grow */
   transition: flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
@@ -55,8 +64,7 @@ body {
 }
 
 .panel > * {
-  transition: transform 0.5s,
-    font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+  transition: transform 0.5s, font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
 }
 
 .panel > p {
@@ -66,7 +74,7 @@ body {
   align-items: center;
   font-size: 8rem;
   text-transform: uppercase;
-  text-shadow: 0 0 0.4rem #000000b8, 0 0 1.4rem #00000073;
+  text-shadow: 0 0 0.4rem var(--text-shadow-clr1), 0 0 1.4rem var(--text-shadow-clr2);
 }
 
 .panel > p:nth-child(2) {
@@ -104,19 +112,19 @@ body {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  background-color: #eea8d7;
+  background-color: var(--pink);
 }
 
 .loader {
   width: 30rem;
   height: 30rem;
-  background: center / contain no-repeat url(../img/spinner.gif) #eea8d7;
+  background: center / contain no-repeat url(../img/spinner.gif) var(--pink);
   background-blend-mode: multiply;
 }
 
 ::selection {
-  color: #f0e5f0;
-  background-color: #eea8d7;
+  color: var(--white);
+  background-color: var(--pink);
 }
 
 @media screen and (max-width: 1050px) {
