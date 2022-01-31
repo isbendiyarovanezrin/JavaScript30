@@ -1,3 +1,27 @@
+:root {
+  --bg-clr: #85817b4b;
+  --blue: #0077ff;
+  --orange-gold: #daa520;
+  --atlantis: #9acd32;
+  --aqua-marine: #40e0d0;
+  --blue-violet: #892be2f3;
+  --tomato: #ff6347;
+  --muted-blue: #337199;
+  --lightcoral: #f08080;
+  --tiger-orange: #cd853f;
+  --deep-aqua: #008080;
+  --jade: #25aa7b;
+  --phlox: #e100ffc2;
+  --light-coral: #f08080;
+  --aztec-purple: #7847ff93;
+  --transparent-white: #faf8f641;
+  --dimorphotheca-magenta: #e04099;
+  --sandy-brown: #c8a16d;
+  --rose-pink: #ee9191;
+  --flaming-pink: #f0adb6;
+  --brandy-punch: #ce8233;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +40,7 @@ body {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  background: center / cover fixed url(../img/texture.jfif) #85817b4b;
+  background: center / cover fixed url(../img/texture.jfif) var(--bg-clr);
   background-blend-mode: color-burn;
 }
 
@@ -37,7 +61,7 @@ body {
 
 .items.active {
   height: 100vh;
-  background-color: #faf8f641;
+  background-color: var(--transparent-white);
   cursor: grabbing;
   cursor: -webkit-grabbing;
   transform: scale(1);
@@ -60,101 +84,101 @@ body {
 }
 
 .item:first-child {
-  background: 30% / cover url(../img/boy-1.jfif) #daa520;
+  background: 30% / cover url(../img/boy-1.jfif) var(--orange-gold);
 }
 
 .item:nth-child(2) {
-  background: 67% 28% / cover url(../img/boy-4.jfif) #9acd32;
+  background: 67% 28% / cover url(../img/boy-4.jfif) var(--atlantis);
 }
 
 .item:nth-child(3) {
-  background: 30% / cover url(../img/boy-8.jfif) #0077ff;
+  background: 30% / cover url(../img/boy-8.jfif) var(--blue);
 }
 
 .item:nth-child(4) {
-  background: 55% / cover url(../img/boy-23.jfif) #40e0d0;
+  background: 55% / cover url(../img/boy-23.jfif) var(--aqua-marine);
 }
 
 .item:nth-child(5) {
-  background: 42% / cover url(../img/boy-5.jfif) #892be2f3;
+  background: 42% / cover url(../img/boy-5.jfif) var(--blue-violet);
 }
 
 .item:nth-child(6) {
-  background: 44% / cover url(../img/boy-6.jfif) #ff6347;
+  background: 44% / cover url(../img/boy-6.jfif) var(--tomato);
 }
 
 .item:nth-child(7) {
-  background: 30% / cover url(../img/boy-13.jfif) #8ecd3f;
+  background: 30% / cover url(../img/boy-13.jfif) var(--atlantis);
 }
 
 .item:nth-child(8) {
-  background: 45% / cover url(../img/boy-21.jfif) #337199;
+  background: 45% / cover url(../img/boy-21.jfif) var(--muted-blue);
 }
 
 .item:nth-child(9) {
-  background: 30% / cover url(../img/boy-9.jfif) lightcoral;
+  background: 30% / cover url(../img/boy-9.jfif) var(--lightcoral);
 }
 
 .item:nth-child(10) {
-  background: 20% / cover url(../img/boy-12.jfif) #cd853f;
+  background: 20% / cover url(../img/boy-12.jfif) var(--tiger-orange);
 }
 
 .item:nth-child(11) {
-  background: 47% / cover url(../img/boy-10.jfif) #008080;
+  background: 47% / cover url(../img/boy-10.jfif) var(--deep-aqua);
 }
 
 .item:nth-child(12) {
-  background: 42% / cover url(../img/boy-18.jfif) #e100ffc2;
+  background: 42% / cover url(../img/boy-18.jfif) var(--phlox);
 }
 
 .item:nth-child(13) {
-  background: 26% / cover url(../img/boy-14.jfif) #f08080;
+  background: 26% / cover url(../img/boy-14.jfif) var(--light-coral);
 }
 
 .item:nth-child(14) {
-  background: 3% / cover url(../img/boy-2.jfif) #40e0d0;
+  background: 3% / cover url(../img/boy-2.jfif) var(--aqua-marine);
 }
 
 .item:nth-child(15) {
-  background: 41% / cover url(../img/boy-15.jfif) #7847ff93;
+  background: 41% / cover url(../img/boy-15.jfif) var(--aztec-purple);
 }
 
 .item:nth-child(16) {
-  background: 70% / cover url(../img/boy-20.jfif) #e04099;
+  background: 70% / cover url(../img/boy-20.jfif) var(--dimorphotheca-magenta);
 }
 
 .item:nth-child(17) {
-  background: 34% / cover url(../img/boy-17.jfif) #c8a16d;
+  background: 34% / cover url(../img/boy-17.jfif) var(--sandy-brown);
 }
 
 .item:nth-child(18) {
-  background: 69% / cover url(../img/boy-7.jfif) #337199;
+  background: 69% / cover url(../img/boy-7.jfif) var(--muted-blue);
 }
 
 .item:nth-child(19) {
-  background: 41% / cover url(../img/boy-11.jfif) #ee9191;
+  background: 41% / cover url(../img/boy-11.jfif) var(--rose-pink);
 }
 
 .item:nth-child(20) {
-  background: 30% / cover url(../img/boy-19.png) #9acd32;
+  background: 30% / cover url(../img/boy-19.png) var(--atlantis);
 }
 
 .item:nth-child(21) {
-  background: 30% / cover url(../img/boy-16.jfif) #008080;
+  background: 30% / cover url(../img/boy-16.jfif) var(--deep-aqua);
 }
 
 .item:nth-child(22) {
-  background: 50% / cover url(../img/boy-22.jfif) #ce8233;
+  background: 50% / cover url(../img/boy-22.jfif) var(--brandy-punch);
 }
 
 .item:nth-child(23) {
-  background: 35% / cover url(../img/boy-25.jfif) #9acd32;
+  background: 35% / cover url(../img/boy-25.jfif) var(--atlantis);
 }
 
 .item:nth-child(24) {
-  background: 45% / cover url(../img/boy-24.jfif) #eeafb7;
+  background: 70% / cover url(../img/boy-24.jfif) var(--flaming-pink);
 }
 
 .item:last-child {
-  background: 54% / cover url(../img/boy-3.jfif) #25aa7b;
+  background: 54% / cover url(../img/boy-3.jfif) var(--jade);
 }
