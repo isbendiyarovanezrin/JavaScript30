@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  font: 500 2rem Karla;
+  padding: 2rem;
+  background: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%), #8ec5fc;
+}
+
+.texts {
+  position: relative;
+  min-height: 9.4rem;
+  min-width: 45rem;
+  max-width: 70rem;
+  background: linear-gradient(#daeef8 0.09rem, transparent 0.1rem), #ffffff;
+  background-size: 100% 3.1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.9rem 0.9rem 0.01rem #00000024;
+  padding: 1rem 2rem 1rem 5rem;
+}
+
+.texts::before {
+  content: "";
+  position: absolute;
+  left: 3rem;
+  top: 0;
+  bottom: 0;
+  width: 0.5rem;
+  border: 0.1rem solid;
+  border-color: transparent #efe4e4;
+}
+
+p {
+  padding: 0 0.75rem 0.75rem 0;
+  color: #397cb6;
+  caret-color: #397cb6;
+}
+
+::selection {
+  color: #f6f6f6;
+  background-color: #cba6f4;
+}
+
+@media screen and (max-width: 745px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 595px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .texts {
+    max-width: 45rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 5px;
+  }
+}
