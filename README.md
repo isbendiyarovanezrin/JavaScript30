@@ -48,12 +48,16 @@
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=10)
 
-### **[Click and Drag](https://isbendiyarovanezrin.github.io/ClickAndDrag "Click me!🙂")**
+### **[Speech Detection](https://isbendiyarovanezrin.github.io/SpeechDetection "Click me!🙂")**
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=11)
 
-### **[Video Speed Controller](https://isbendiyarovanezrin.github.io/VideoSpeedController "Click me!🙂")**
+### **[Click and Drag](https://isbendiyarovanezrin.github.io/ClickAndDrag "Click me!🙂")**
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=12)
+
+### **[Video Speed Controller](https://isbendiyarovanezrin.github.io/VideoSpeedController "Click me!🙂")**
+
+![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=13)
 
 </div>
