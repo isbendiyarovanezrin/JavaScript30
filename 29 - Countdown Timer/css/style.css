@@ -1,0 +1,165 @@
+:root {
+  --font-family: "Inconsolata", monospace;
+  --white-color: #ffffff;
+  --transparent-black-color: #00000009;
+  --border-color: #2a55589d;
+  --selection-color: #6f76b7;
+  --selection-bg-color: #edfdff;
+  --placeholder-color: #ffffffc9;
+  --caret-color: #6d75bd;
+  --button-bg-color: #1a0a3834;
+  --button-hover-color: #1a0a3856;
+  --button-active-color: #1a0a38e3;
+  --button-transition: all 0.5s ease;
+  --input-transition: all 0.2s ease;
+  --input-focus-color: #d0c0fcfa;
+  --input-bg-color: #d0c0fc27;
+  --input-primary-gradient-color: #44a59ddb;
+  --input-secondary-gradient-color: #6c7ab699;
+  --primary-bg-color: #8360c3;
+  --secondary-bg-color: #2ebf91;
+  --shadow-color: #00000015;
+  --main-box-shadow: var(--shadow-color) 0 0.1rem 0.2rem,
+    var(--shadow-color) 0 0.2rem 0.4rem, var(--shadow-color) 0 0.4rem 0.8rem,
+    var(--shadow-color) 0 0.8rem 1.6rem, var(--shadow-color) 0 1.6rem 3.2rem,
+    var(--shadow-color) 0 3.2rem 6.4rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow: hidden;
+  font-family: var(--font-family);
+  background: center / cover
+    linear-gradient(
+      to right,
+      var(--primary-bg-color),
+      var(--secondary-bg-color)
+    );
+  color: var(--white-color);
+}
+
+header {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  flex: 1;
+}
+
+.timer-buttons {
+  display: flex;
+  flex: 1;
+}
+
+.timer-button {
+  width: 100%;
+  user-select: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0 1rem;
+  border: 0.1rem solid var(--border-color);
+  border-right-color: var(--transparent-black-color);
+  color: var(--white-color);
+  box-shadow: var(--main-box-shadow);
+  background-color: var(--button-bg-color);
+  font: 2.1rem var(--font-family);
+  transition: var(--button-transition);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.timer-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.timer-button:active {
+  background-color: var(--button-active-color);
+}
+
+form {
+  display: flex;
+}
+
+input {
+  user-select: none;
+  text-align: center;
+  text-indent: 1rem;
+  transition: var(--input-transition);
+  border: 0.1rem solid var(--border-color);
+  box-shadow: var(--main-box-shadow);
+  font: 2rem var(--font-family);
+  color: var(--white-color);
+  caret-color: var(--caret-color);
+  background: linear-gradient(
+      to right,
+      var(--input-primary-gradient-color),
+      var(--input-secondary-gradient-color)
+    ),
+    var(--input-bg-color);
+}
+
+input:focus {
+  background-color: var(--input-focus-color);
+}
+
+input::placeholder {
+  color: var(--placeholder-color);
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.display-end-time {
+  font-size: 5rem;
+}
+
+::selection {
+  color: var(--selection-color);
+  background-color: var(--selection-bg-color);
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 4.5px;
+  }
+}

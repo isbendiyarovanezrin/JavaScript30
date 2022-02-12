@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Countdown Timer</title>
+
+    <!-- required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.ico" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="timer">
+      <header>
+        <div class="timer-buttons">
+          <button class="timer-button" data-seconds="20">20 Secs</button>
+          <button class="timer-button" data-seconds="300">Work 5</button>
+          <button class="timer-button" data-seconds="900">Quick 15</button>
+          <button class="timer-button" data-seconds="1200">Snack 20</button>
+          <button class="timer-button" data-seconds="3600">Lunch Break</button>
+        </div>
+        <form id="form">
+          <input
+            type="text"
+            id="input"
+            autocomplete="off"
+            placeholder="Enter minutes"
+            maxlength="11"
+          />
+        </form>
+      </header>
+      <div class="display">
+        <div class="display-remaining-time"></div>
+        <div class="display-end-time"></div>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
