@@ -1,0 +1,186 @@
+:root {
+  --font-family: Karla, sans-serif;
+  --bg-color: #4c781e;
+  --img-bg-color: #4d781e9a;
+  --img-frame-color: #fbfcd8;
+  --text-color: #0b490b;
+  --border-color: #fbff80;
+  --gradient-color: #87b53e;
+  --scrollbar-hover-color: #87b53ecc;
+  --scrollbar-shadow-color: #00000094;
+  --img-shadow-color: #0000001a;
+  --primary-canvas-shadow-color: #0000002f;
+  --secondary-canvas-shadow-color: #00000018;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font: 500 1.7rem var(--font-family);
+  background: linear-gradient(transparent 50%, var(--gradient-color) 50%),
+    var(--bg-color);
+  background-size: 5rem 5rem;
+}
+
+.controls {
+  margin: 2rem 0;
+}
+
+#btn {
+  color: var(--text-color);
+  background-color: var(--border-color);
+  padding: 1rem 2rem;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: inset 0 0 0.1rem var(--text-color);
+  font: 500 1.7rem var(--font-family);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#btn:hover {
+  transition: 0.5s ease;
+  background-color: var(--img-frame-color);
+}
+
+#btn:active {
+  transform: scale(0.98);
+}
+
+.main {
+  position: relative;
+}
+
+video {
+  width: 25rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  border: 0.2rem solid var(--border-color);
+  border-right-color: transparent;
+}
+
+#canvas {
+  position: relative;
+  width: 88vw;
+  height: 92vh;
+  object-fit: cover;
+  border: 0.2rem solid var(--border-color);
+  box-shadow: var(--primary-canvas-shadow-color) 0 1rem 3.6rem 0,
+    var(--secondary-canvas-shadow-color) 0 0 0 0.1rem;
+}
+
+#images {
+  width: 88vw;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+  background-color: var(--img-bg-color);
+  border: 0.2rem solid var(--border-color);
+}
+
+.link {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.my-img {
+  width: 13rem;
+  margin: 0.3rem 0;
+  object-fit: cover;
+  user-select: none;
+  padding: 1rem 1rem 3rem;
+  background-color: var(--img-frame-color);
+  box-shadow: var(--img-shadow-color) 0 0 0.5rem 0,
+    var(--img-shadow-color) 0 0 0.1rem 0;
+}
+
+.link:nth-child(6n + 1) .my-img {
+  transform: rotate(15deg);
+}
+
+.link:nth-child(6n + 2) .my-img {
+  transform: rotate(-10deg);
+}
+
+.link:nth-child(6n + 3) .my-img {
+  transform: rotate(11deg);
+}
+
+.link:nth-child(6n + 4) .my-img {
+  transform: rotate(-13deg);
+}
+
+.link:nth-child(6n + 5) .my-img {
+  transform: rotate(8deg);
+}
+
+.link:nth-child(6n + 6) .my-img {
+  transform: rotate(-14deg);
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.5rem var(--scrollbar-shadow-color);
+  background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 0.5rem var(--scrollbar-shadow-color);
+  background-color: var(--gradient-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-hover-color);
+}
+
+/* media queries */
+@media screen and (max-width: 700px) {
+  #canvas {
+    height: 70vh;
+    width: 93vw;
+  }
+
+  #images {
+    width: 93vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  video {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 9px;
+  }
+
+  #canvas {
+    height: 65vh;
+  }
+}
