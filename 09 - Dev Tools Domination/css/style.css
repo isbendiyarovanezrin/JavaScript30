@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(#ffa6009a, white);
+}
+
+p {
+  text-transform: uppercase;
+  font-size: 2rem;
+  cursor: pointer;
+  font-family: Karla, sans-serif;
+}
+
+::selection {
+  background-color: orange;
+  color: white;
+}
