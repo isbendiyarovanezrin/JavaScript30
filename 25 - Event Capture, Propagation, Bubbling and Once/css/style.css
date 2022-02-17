@@ -1,0 +1,71 @@
+* {
+  border: none;
+  outline: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.one {
+  background-color: mediumseagreen;
+}
+
+.two {
+  background-color: coral;
+}
+
+.three {
+  background-color: mediumpurple;
+}
+
+div {
+  width: 100%;
+  padding: 6rem;
+}
+
+button {
+  margin-bottom: 0.8rem;
+  margin-top: 0.2rem;
+  padding: 0.3rem 1rem;
+  font: 1rem Karla, sans-serif;
+  background-image: linear-gradient(mediumseagreen, coral, mediumpurple);
+  color: white;
+  border: 0.1rem solid grey;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.99);
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 7.4px;
+  }
+}
