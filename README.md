@@ -24,7 +24,7 @@
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=4)
 
-### [Array Cardio Day 1](https://github.com/isbendiyarovanezrin/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201#readme "Click me!🙂")
+### [Array Cardio Day 1](https://github.com/isbendiyarovanezrin/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201#readme "Click me!💪")
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=5)
 
@@ -36,7 +36,7 @@
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=7)
 
-### [Array Cardio Day 2](https://github.com/isbendiyarovanezrin/JavaScript30/tree/master/07%20-%20Array%20Cardio%20Day%202#readme "Click me!🙃")
+### [Array Cardio Day 2](https://github.com/isbendiyarovanezrin/JavaScript30/tree/master/07%20-%20Array%20Cardio%20Day%202#readme "Click me!💪")
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=8)
 
@@ -48,7 +48,7 @@
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=10)
 
-### [JavaScript References VS Copying](https://github.com/isbendiyarovanezrin/JavaScript30/tree/master/14%20-%20JavaScript%20References%20VS%20Copying#readme "Click me!👇🏻")
+### [JavaScript References VS Copying](https://github.com/isbendiyarovanezrin/JavaScript30/tree/master/14%20-%20JavaScript%20References%20VS%20Copying#readme "Click me!🙃")
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=11)
 
