@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffc83d;
+}
+
+p {
+  text-align: center;
+  margin: 1.2rem;
+  color: #8e562e;
+  font: italic 1.4rem Karla, sans-serif;
+}
+
+::selection {
+  color: #ffffff;
+  background-color: #8e562e;
+}
