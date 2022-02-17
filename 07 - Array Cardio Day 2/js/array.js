@@ -19,16 +19,18 @@ const comments = [
 var today = new Date();
 var currentYear = today.getFullYear();
 
-// Array.prototype.some() // is at least one person 19 or older?
+// Array.prototype.some()
+// Is at least one person 19 or older?
 let a = people.some((person) => 19 <= currentYear - person.year);
 console.log(a);
 
-// Array.prototype.every() // is everyone 19 or older?
+// Array.prototype.every()
+// Is everyone 19 or older?
 let b = people.every((person) => 19 <= currentYear - person.year);
 console.log(b);
 
 // Array.prototype.find()
-// find the comment with the ID of 823423
+// Find the comment with the ID of 823423
 let comment = comments.find((comment) => comment.id === 823423);
 console.log(comment);
 
@@ -37,6 +39,6 @@ console.log(comment);
 let index = comments.findIndex((comment) => comment.id === 823423);
 console.log(index);
 
-// delete the comment with the ID of 823423
+// Delete the comment with the ID of 823423
 comments.splice(index, 1);
 console.log(comments);
