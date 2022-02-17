@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -8,12 +9,13 @@ body {
 }
 
 p {
-  margin: 20px;
+  text-align: center;
+  margin: 1.2rem;
   color: #8e562e;
-  font: italic 500 20px Cambria, Cochin, Georgia, serif;
+  font: italic 1.5rem Cambria, Cochin, Georgia, serif;
 }
 
 ::selection {
-  color: #fff;
+  color: #ffffff;
   background-color: #8e562e;
 }
