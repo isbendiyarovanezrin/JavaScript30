@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #5f9ea0;
+  font: 2rem Karla, sans-serif;
+}
+
+.items {
+  max-width: 50rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 1rem 1rem #0000003b;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.1rem solid #ebebebe1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input[type="checkbox"] {
+  margin: 1.8rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + p {
+  transition: background-color 0.4s ease;
+  padding: 1.8rem;
+  width: 100%;
+  border-left: 0.1rem solid #c2ccf8;
+}
+
+input:checked + p {
+  background-color: #f9f9f9;
+  text-decoration: line-through;
+}
+
+::selection {
+  color: #ffffff;
+  background-color: #5f9ea0;
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 5px;
+  }
+}
