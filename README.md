@@ -52,36 +52,40 @@
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=11)
 
-### [JavaScript References VS Copying](https://github.com/isbendiyarovanezrin/JavaScript30/tree/master/14%20-%20JavaScript%20References%20VS%20Copying#readme "Click me!🙃")
+### [Key Sequence Detection](https://github.com/isbendiyarovanezrin/JavaScript30/tree/master/12%20-%20Key%20Sequence%20Detection#readme "Click me!🦄")
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=12)
 
-### [Mouse Move Shadow](https://isbendiyarovanezrin.github.io/MouseMoveShadow "Click me!👥")
+### [JavaScript References VS Copying](https://github.com/isbendiyarovanezrin/JavaScript30/tree/master/14%20-%20JavaScript%20References%20VS%20Copying#readme "Click me!🙃")
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=13)
 
-### [Webcam Fun](https://isbendiyarovanezrin.github.io/WebcamFun "Click me!📸")
+### [Mouse Move Shadow](https://isbendiyarovanezrin.github.io/MouseMoveShadow "Click me!👥")
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=14)
 
-### [Speech Detection](https://isbendiyarovanezrin.github.io/SpeechDetection "Click me!💬")
+### [Webcam Fun](https://isbendiyarovanezrin.github.io/WebcamFun "Click me!📸")
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=15)
 
-### [Event Capture, Propagation, Bubbling and Once](https://github.com/isbendiyarovanezrin/JavaScript30/tree/master/25%20-%20Event%20Capture%2C%20Propagation%2C%20Bubbling%20and%20Once#readme "Click me!😮")
+### [Speech Detection](https://isbendiyarovanezrin.github.io/SpeechDetection "Click me!💬")
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=16)
 
-### [Click and Drag](https://isbendiyarovanezrin.github.io/ClickAndDrag "Click me!😎")
+### [Event Capture, Propagation, Bubbling and Once](https://github.com/isbendiyarovanezrin/JavaScript30/tree/master/25%20-%20Event%20Capture%2C%20Propagation%2C%20Bubbling%20and%20Once#readme "Click me!😮")
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=17)
 
-### [Video Speed Controller](https://isbendiyarovanezrin.github.io/VideoSpeedController "Click me!📹")
+### [Click and Drag](https://isbendiyarovanezrin.github.io/ClickAndDrag "Click me!😎")
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=18)
 
-### [Countdown Timer](https://isbendiyarovanezrin.github.io/CountdownTimer "Click me!⏳")
+### [Video Speed Controller](https://isbendiyarovanezrin.github.io/VideoSpeedController "Click me!📹")
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=19)
+
+### [Countdown Timer](https://isbendiyarovanezrin.github.io/CountdownTimer "Click me!⏳")
+
+![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=20)
 
 </div>
