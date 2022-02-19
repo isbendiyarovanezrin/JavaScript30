@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  background-color: hsla(177, 81%, 56%, 0.103);
+}
+
+img {
+  user-select: none;
+}
+
+::selection{
+  color: #ffffff;
+  background-color: hsl(177, 81%, 56%);
+}
