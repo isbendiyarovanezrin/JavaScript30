@@ -1,3 +1,5 @@
+"use strict";
+
 const pressed = [];
 const secretWord = "vusale";
 
