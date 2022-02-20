@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  padding: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font: 2rem "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, sans-serif;
+  background: url(../img/nature.jfif) top center / cover no-repeat;
+}
+
+#bands {
+  list-style: square inside;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 1.3rem #0000000d;
+}
+
+#bands li {
+  padding: 1.02rem 2rem;
+  border-bottom: 0.1rem solid #efefef;
+}
+
+#bands li:last-child {
+  border-bottom: 0;
+}
+
+::marker {
+  color: #837544;
+}
+
+::selection {
+  color: #ffffff;
+  background-color: #958755;
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 9px;
+  }
+}
