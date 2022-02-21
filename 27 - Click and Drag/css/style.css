@@ -84,101 +84,102 @@ body {
 }
 
 .item:first-child {
-  background: 30% / cover url(../img/boy-1.jfif) var(--orange-gold);
+  background: no-repeat 30% / cover url(../img/boy-1.jfif) var(--orange-gold);
 }
 
 .item:nth-child(2) {
-  background: 67% 28% / cover url(../img/boy-4.jfif) var(--atlantis);
+  background: no-repeat 67% 28% / cover url(../img/boy-4.jfif) var(--atlantis);
 }
 
 .item:nth-child(3) {
-  background: 30% / cover url(../img/boy-8.jfif) var(--blue);
+  background: no-repeat 30% / cover url(../img/boy-8.jfif) var(--blue);
 }
 
 .item:nth-child(4) {
-  background: 55% / cover url(../img/boy-23.jfif) var(--aqua-marine);
+  background: no-repeat 55% / cover url(../img/boy-23.jfif) var(--aqua-marine);
 }
 
 .item:nth-child(5) {
-  background: 42% / cover url(../img/boy-5.jfif) var(--blue-violet);
+  background: no-repeat 42% / cover url(../img/boy-5.jfif) var(--blue-violet);
 }
 
 .item:nth-child(6) {
-  background: 44% / cover url(../img/boy-6.jfif) var(--tomato);
+  background: no-repeat 44% / cover url(../img/boy-6.jfif) var(--tomato);
 }
 
 .item:nth-child(7) {
-  background: 30% / cover url(../img/boy-13.jfif) var(--atlantis);
+  background: no-repeat 30% / cover url(../img/boy-13.jfif) var(--atlantis);
 }
 
 .item:nth-child(8) {
-  background: 45% / cover url(../img/boy-21.jfif) var(--muted-blue);
+  background: no-repeat 45% / cover url(../img/boy-21.jfif) var(--muted-blue);
 }
 
 .item:nth-child(9) {
-  background: 30% / cover url(../img/boy-9.jfif) var(--lightcoral);
+  background: no-repeat 30% / cover url(../img/boy-9.jfif) var(--lightcoral);
 }
 
 .item:nth-child(10) {
-  background: 20% / cover url(../img/boy-12.jfif) var(--tiger-orange);
+  background: no-repeat 20% / cover url(../img/boy-12.jfif) var(--tiger-orange);
 }
 
 .item:nth-child(11) {
-  background: 47% / cover url(../img/boy-10.jfif) var(--deep-aqua);
+  background: no-repeat 47% / cover url(../img/boy-10.jfif) var(--deep-aqua);
 }
 
 .item:nth-child(12) {
-  background: 42% / cover url(../img/boy-18.jfif) var(--phlox);
+  background: no-repeat 42% / cover url(../img/boy-18.jfif) var(--phlox);
 }
 
 .item:nth-child(13) {
-  background: 26% / cover url(../img/boy-14.jfif) var(--light-coral);
+  background: no-repeat 26% / cover url(../img/boy-14.jfif) var(--light-coral);
 }
 
 .item:nth-child(14) {
-  background: 3% / cover url(../img/boy-2.jfif) var(--aqua-marine);
+  background: no-repeat 3% / cover url(../img/boy-2.jfif) var(--aqua-marine);
 }
 
 .item:nth-child(15) {
-  background: 41% / cover url(../img/boy-15.jfif) var(--aztec-purple);
+  background: no-repeat 41% / cover url(../img/boy-15.jfif) var(--aztec-purple);
 }
 
 .item:nth-child(16) {
-  background: 70% / cover url(../img/boy-20.jfif) var(--dimorphotheca-magenta);
+  background: no-repeat 70% / cover url(../img/boy-20.jfif)
+    var(--dimorphotheca-magenta);
 }
 
 .item:nth-child(17) {
-  background: 34% / cover url(../img/boy-17.jfif) var(--sandy-brown);
+  background: no-repeat 34% / cover url(../img/boy-17.jfif) var(--sandy-brown);
 }
 
 .item:nth-child(18) {
-  background: 69% / cover url(../img/boy-7.jfif) var(--muted-blue);
+  background: no-repeat 69% / cover url(../img/boy-7.jfif) var(--muted-blue);
 }
 
 .item:nth-child(19) {
-  background: 41% / cover url(../img/boy-11.jfif) var(--rose-pink);
+  background: no-repeat 41% / cover url(../img/boy-11.jfif) var(--rose-pink);
 }
 
 .item:nth-child(20) {
-  background: 30% / cover url(../img/boy-19.png) var(--atlantis);
+  background: no-repeat 30% / cover url(../img/boy-19.png) var(--atlantis);
 }
 
 .item:nth-child(21) {
-  background: 30% / cover url(../img/boy-16.jfif) var(--deep-aqua);
+  background: no-repeat 30% / cover url(../img/boy-16.jfif) var(--deep-aqua);
 }
 
 .item:nth-child(22) {
-  background: 50% / cover url(../img/boy-22.jfif) var(--brandy-punch);
+  background: no-repeat 50% / cover url(../img/boy-22.jfif) var(--brandy-punch);
 }
 
 .item:nth-child(23) {
-  background: 35% / cover url(../img/boy-25.jfif) var(--atlantis);
+  background: no-repeat 35% / cover url(../img/boy-25.jfif) var(--atlantis);
 }
 
 .item:nth-child(24) {
-  background: 70% / cover url(../img/boy-24.jfif) var(--flaming-pink);
+  background: no-repeat 54% / cover url(../img/boy-24.jpeg) var(--flaming-pink);
 }
 
 .item:last-child {
-  background: 54% / cover url(../img/boy-3.jfif) var(--jade);
+  background: no-repeat 54% / cover url(../img/boy-3.jfif) var(--jade);
 }
