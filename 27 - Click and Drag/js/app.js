@@ -1,6 +1,7 @@
 "use strict";
 
 const slider = document.querySelector(".items");
+const sound = document.getElementById("sound");
 
 let isDown = false,
   scrollLeft,
@@ -11,16 +12,19 @@ slider.addEventListener("mousedown", (e) => {
   slider.classList.add("active");
   startX = e.pageX - slider.offsetLeft;
   scrollLeft = slider.scrollLeft;
+  sound.play();
 });
 
 slider.addEventListener("mouseleave", () => {
   isDown = false;
   slider.classList.remove("active");
+  sound.pause();
 });
 
 slider.addEventListener("mouseup", () => {
   isDown = false;
   slider.classList.remove("active");
+  sound.pause();
 });
 
 slider.addEventListener("mousemove", (e) => {
@@ -29,4 +33,5 @@ slider.addEventListener("mousemove", (e) => {
   const x = e.pageX - slider.offsetLeft;
   const walk = (x - startX) * 4;
   slider.scrollLeft = scrollLeft - walk;
+  sound.play();
 });
