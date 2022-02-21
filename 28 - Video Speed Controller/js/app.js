@@ -17,3 +17,7 @@ function move(e) {
   bar.style.height = height;
   bar.textContent = playbackRate.toFixed(2) + "x";
 }
+
+// background sound
+const sound = document.getElementById("sound");
+sound.play();
