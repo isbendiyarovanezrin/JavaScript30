@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20rem;
+  min-height: 100vh;
+  color: black;
+  font: 2rem Karla, sans-serif;
+  background: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%), #00dbde;
+}
+
+a {
+  color: rebeccapurple;
+  padding: 0.4rem;
+  border-radius: 2rem;
+  background-color: #00000018;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+nav {
+  width: 100%;
+}
+
+.menu {
+  margin: 5rem 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+article {
+  position: relative;
+}
+
+p {
+  margin: 4rem 0;
+  line-height: 3.4rem;
+  text-align: justify;
+}
+
+p:first-child {
+  margin: 0;
+}
+
+.highlight {
+  transition: all 0.25s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: beige;
+  z-index: -1;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem #00000033;
+  border-radius: 2rem;
+  background-color: 0 0 1rem #00000033;
+}
+
+::selection {
+  color: beige;
+  background-color: rebeccapurple;
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 8px;
+  }
+
+  body {
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 6px;
+  }
+
+  body {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 4.4px;
+  }
+}
