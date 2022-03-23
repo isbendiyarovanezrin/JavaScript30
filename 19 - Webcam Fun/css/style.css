@@ -6,6 +6,7 @@
   --text-color: #0b490b;
   --border-color: #fbff80;
   --gradient-color: #87b53e;
+  --loader-color: #d0faa6;
   --scrollbar-hover-color: #87b53ecc;
   --scrollbar-shadow-color: #00000094;
   --img-shadow-color: #0000001a;
@@ -153,6 +154,26 @@ video {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--scrollbar-hover-color);
+}
+
+/* loader */
+#loadingDiv {
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: var(--loader-color);
+}
+
+.loader {
+  width: 7rem;
+  height: 7rem;
+  background: center / contain no-repeat url(../img/loader.gif);
 }
 
 /* media queries */
