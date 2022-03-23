@@ -35,3 +35,14 @@ function changeCursor(e) {
 // sound
 const song = document.getElementById("song");
 song.play();
+
+// loader
+$(window).on("load", () => {
+  setTimeout(removeLoader, 1700);
+});
+
+function removeLoader() {
+  $("#loadingDiv").fadeOut(500, () => {
+    $("#loadingDiv").remove();
+  });
+}
