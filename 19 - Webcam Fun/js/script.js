@@ -1,3 +1,5 @@
+"use strict";
+
 const btn = document.getElementById("btn");
 const video = document.getElementById("player");
 const images = document.getElementById("images");
@@ -57,3 +59,22 @@ function takePhoto() {
 getVideo();
 video.addEventListener("canplay", paintCanvas);
 btn.addEventListener("click", takePhoto);
+
+// loader
+$("html").css(
+  "overflow",
+  "hidden",
+  setTimeout(() => {
+    $("html").css("overflow-y", "visible");
+  }, 1800)
+);
+
+$(window).on("load", () => {
+  setTimeout(removeLoader, 1700);
+});
+
+function removeLoader() {
+  $("#loadingDiv").fadeOut(500, () => {
+    $("#loadingDiv").remove();
+  });
+}
