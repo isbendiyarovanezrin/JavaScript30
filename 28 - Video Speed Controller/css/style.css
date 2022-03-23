@@ -108,6 +108,24 @@ p:last-child {
   background-color: var(--yellow);
 }
 
+/* loader */
+#loadingDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: var(--yellow);
+}
+
+.loader {
+  width: 7rem;
+  height: 7rem;
+  background: center / contain no-repeat url(../img/loader.gif);
+}
+
 @media screen and (max-width: 1260px) {
   .text {
     display: none;
