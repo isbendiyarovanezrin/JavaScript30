@@ -1,11 +1,10 @@
 :root {
   --body-color: #4685eb67;
   --clock-bg-color: #0187d657;
-  --hand-color: #04316e;
   --shadow-color1: #0000003d;
   --shadow-color2: #094d7899;
   --border-color: #04316e;
-  --dot-color: #04316e;
+  --loader-color: #78b6ec;
 }
 
 * {
@@ -29,6 +28,23 @@ body {
     var(--body-color);
 }
 
+#loadingDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: var(--loader-color);
+}
+
+.loader {
+  width: 6.5rem;
+  height: 6.5rem;
+  background: center / contain no-repeat url(../img/loader.gif);
+}
+
 .clock {
   width: 35rem;
   height: 35rem;
@@ -50,7 +66,7 @@ body {
   position: absolute;
   border-radius: 5rem;
   transform-origin: 50% 100%;
-  background-color: var(--hand-color);
+  background-color: var(--border-color);
 }
 
 .second-hand {
@@ -78,7 +94,7 @@ body {
   height: 1rem;
   border-radius: 50%;
   position: absolute;
-  background-color: var(--dot-color);
+  background-color: var(--border-color);
 }
 
 #cursor {
@@ -86,7 +102,7 @@ body {
   border-radius: 50%;
   width: 1.5rem;
   height: 1.5rem;
-  z-index: 100;
+  z-index: 50;
   transition: all 0.1s linear;
   pointer-events: none;
   border: 0.2rem solid var(--border-color);
