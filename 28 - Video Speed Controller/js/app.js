@@ -21,3 +21,14 @@ function move(e) {
 // background sound
 const sound = document.getElementById("sound");
 sound.play();
+
+// loader
+$(window).on("load", () => {
+  setTimeout(removeLoader, 1600);
+});
+
+function removeLoader() {
+  $("#loadingDiv").fadeOut(500, () => {
+    $("#loadingDiv").remove();
+  });
+}
