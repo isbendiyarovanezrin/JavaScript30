@@ -60,3 +60,13 @@ function draw(e) {
 
   ctx.closePath();
 }
+
+const p = document.getElementById("text");
+setTimeout(() => {
+  p.style.opacity = "0";
+  p.style.transition = "1s ease";
+}, 2000);
+
+setTimeout(() => {
+  p.style.display = "none";
+}, 2700);

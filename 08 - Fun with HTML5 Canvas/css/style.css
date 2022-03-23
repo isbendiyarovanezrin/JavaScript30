@@ -3,7 +3,33 @@
   padding: 0;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   background-color: #eaf6f554;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#text {
+  color: #8a2be2;
+  position: absolute;
+  font: 4rem "Finger Paint", cursive;
+  animation: fade 1s ease;
+  user-select: none;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
