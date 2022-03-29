@@ -16,8 +16,8 @@ const comments = [
 ];
 
 // Some and Every Checks
-var today = new Date();
-var currentYear = today.getFullYear();
+let today = new Date();
+let currentYear = today.getFullYear();
 
 // Array.prototype.some()
 // Is at least one person 19 or older?
