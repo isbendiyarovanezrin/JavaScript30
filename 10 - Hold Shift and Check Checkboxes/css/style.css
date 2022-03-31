@@ -1,3 +1,13 @@
+:root {
+  --font-family: Karla, sans-serif;
+  --primary-clr: #5f9ea0;
+  --bg-clr: #f9f9f9;
+  --border-bottom-clr: #ebebebe1;
+  --border-left-clr: #c2ccf8;
+  --white: #ffffff;
+  --box-shadow: #0000003b;
+}
+
 *,
 *::after,
 *::before {
@@ -17,21 +27,21 @@ body {
   align-items: center;
   min-height: 100vh;
   overflow: hidden;
-  background-color: #5f9ea0;
-  font: 2rem Karla, sans-serif;
+  background-color: var(--primary-clr);
+  font: 2rem var(--font-family);
 }
 
 .items {
   max-width: 50rem;
-  background-color: #ffffff;
+  background-color: var(--white);
   border-radius: 0.5rem;
-  box-shadow: 1rem 1rem #0000003b;
+  box-shadow: 1rem 1rem var(--box-shadow);
 }
 
 .item {
   display: flex;
   align-items: center;
-  border-bottom: 0.1rem solid #ebebebe1;
+  border-bottom: 0.1rem solid var(--border-bottom-clr);
 }
 
 .item:last-child {
@@ -47,17 +57,17 @@ input[type="checkbox"] + p {
   transition: background-color 0.4s ease;
   padding: 1.8rem;
   width: 100%;
-  border-left: 0.1rem solid #c2ccf8;
+  border-left: 0.1rem solid var(--border-left-clr);
 }
 
 input:checked + p {
-  background-color: #f9f9f9;
+  background-color: var(--bg-clr);
   text-decoration: line-through;
 }
 
 ::selection {
-  color: #ffffff;
-  background-color: #5f9ea0;
+  color: var(--white);
+  background-color: var(--primary-clr);
 }
 
 @media screen and (max-width: 700px) {
