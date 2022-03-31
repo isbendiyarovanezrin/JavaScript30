@@ -1,3 +1,13 @@
+:root {
+  --font-family: "helvetica neue";
+  --white: #ffffff;
+  --black: #000000;
+  --bg-clr: #7f87882a;
+  --hover-bg-clr: #7f8788;
+  --box-shadow: #0000000d;
+  --text-shadow: #00000033;
+}
+
 *,
 *::after,
 *::before {
@@ -13,8 +23,8 @@ html {
 }
 
 body {
-  font: 2rem "helvetica neue";
-  background-color: #7f87882a;
+  font: 2rem var(--font-family);
+  background-color: var(--bg-clr);
   overflow-x: hidden;
 }
 
@@ -27,14 +37,14 @@ header {
 }
 
 .title {
-  color: #ffffff;
+  color: var(--white);
   font-size: 6.2rem;
-  text-shadow: 0.3rem 0.4rem #00000033;
+  text-shadow: 0.3rem 0.4rem var(--text-shadow);
 }
 
 nav {
   top: -0.1px;
-  background-color: #000000;
+  background-color: var(--black);
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
@@ -54,24 +64,24 @@ nav {
 
 .nav-item:hover {
   transition: 0.5s ease;
-  background-color: #7f8788 !important;
+  background-color: var(--hover-bg-clr) !important;
 }
 
 #logo {
   max-width: 0;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: var(--white);
   transition: 0.5s ease;
 }
 
 .logo-link {
   font-size: 3rem;
   font-weight: 600;
-  color: #000000 !important;
+  color: var(--black) !important;
 }
 
 .nav-link {
-  color: #ffffff;
+  color: var(--white);
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
@@ -82,10 +92,10 @@ nav {
 .site-wrap {
   max-width: 70rem;
   margin: 6rem auto;
-  background-color: #ffffff;
+  background-color: var(--white);
   padding: 4rem;
   text-align: center;
-  box-shadow: 0 0 1rem 0.5rem #0000000d;
+  box-shadow: 0 0 1rem 0.5rem var(--box-shadow);
 }
 
 .site-wrap p {
@@ -101,13 +111,13 @@ nav {
 }
 
 ::selection {
-  color: #ffffff;
-  background-color: #000000;
+  color: var(--white);
+  background-color: var(--black);
 }
 
 a::selection {
-  color: #000000;
-  background-color: #ffffff;
+  color: var(--black);
+  background-color: var(--white);
 }
 
 @media screen and (max-width: 800px) {
