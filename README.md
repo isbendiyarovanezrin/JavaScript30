@@ -1,6 +1,6 @@
 <div align="center">
 
-### “Always bet on JavaScript.”
+### “Always bet on [JavaScript](https://youtube.com/playlist?list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH).”
 
 <p align="end"><em>- Brendan Eich</em></p>
 
