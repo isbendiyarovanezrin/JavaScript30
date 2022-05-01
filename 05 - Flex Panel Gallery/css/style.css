@@ -4,6 +4,11 @@
   --box-shadow-clr: #ffffff1a;
   --text-shadow-clr1: #00000073;
   --text-shadow-clr2: #000000b8;
+  --bg-blend-mode-clr1: #ea9df0fb;
+  --bg-blend-mode-clr2: #e9b981e5;
+  --bg-blend-mode-clr3: #f1c166f6;
+  --bg-blend-mode-clr4: #b1dd5ed3;
+  --bg-blend-mode-clr5: #dd3a1dc4;
   --font-family: "Amatic SC", cursive;
 }
 
@@ -36,35 +41,43 @@ body {
   align-items: center;
   color: var(--white);
   background: center/cover;
+  background-blend-mode: darken;
   box-shadow: inset 0 0 0 0.3rem var(--box-shadow-clr);
-  /* Safari transitionend event.propertyName === flex */
-  /* Chrome + FF transitionend event.propertyName === flex-grow */
   transition: flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
 }
 
 .panel1 {
   background-image: url(../img/sea.jpg);
+  background-color: var(--bg-blend-mode-clr1);
 }
 
 .panel2 {
   background-image: url(../img/blue.jfif);
-  background-position: 70%;
+  background-position: 75%;
+  background-color: var(--bg-blend-mode-clr2);
+  filter: contrast(103%);
 }
 
 .panel3 {
   background-image: url(../img/nature.jfif);
+  background-position: 35%;
+  background-color: var(--bg-blend-mode-clr3);
 }
 
 .panel4 {
-  background-image: url(../img/mountain.jfif);
+  background-image: url(../img/tree.jpg);
+  background-color: var(--bg-blend-mode-clr4);
+  filter: contrast(103%);
 }
 
 .panel5 {
   background-image: url(../img/fox.jfif);
+  background-color: var(--bg-blend-mode-clr5);
 }
 
 .panel > * {
-  transition: transform 0.5s, font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+  transition: transform 0.5s,
+    font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
 }
 
 .panel > p {
@@ -74,7 +87,8 @@ body {
   align-items: center;
   font-size: 8rem;
   text-transform: uppercase;
-  text-shadow: 0 0 0.4rem var(--text-shadow-clr1), 0 0 1.4rem var(--text-shadow-clr2);
+  text-shadow: 0 0 0.4rem var(--text-shadow-clr1),
+    0 0 1.4rem var(--text-shadow-clr2);
 }
 
 .panel > p:nth-child(2) {
@@ -130,6 +144,10 @@ body {
 @media screen and (max-width: 1050px) {
   html {
     font-size: 8px;
+  }
+
+  .panel3 {
+    background-position: center;
   }
 }
 
