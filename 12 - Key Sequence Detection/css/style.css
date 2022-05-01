@@ -11,7 +11,7 @@ img {
   user-select: none;
 }
 
-::selection{
-  color: #ffffff;
-  background-color: hsl(177, 81%, 56%);
+::selection {
+  color: hsl(0, 0%, 100%);
+  background-color: #96f8f3;
 }
