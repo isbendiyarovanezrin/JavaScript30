@@ -2,11 +2,16 @@
 
 const hero = document.querySelector(".hero");
 const text = hero.querySelector(".text");
+const mq = window.matchMedia("(max-width: 1007px)");
 let walk = 200; // 200px
 
-hero.addEventListener("mousemove", shadow);
+hero.addEventListener("mousemove", addShadow);
+text.addEventListener("click", addOutline);
+text.addEventListener("input", addOutline);
+text.addEventListener("mouseout", removeOutline);
+text.addEventListener("keydown", setMaxLength);
 
-function shadow(e) {
+function addShadow(e) {
   let { offsetWidth: width, offsetHeight: height } = hero;
   let { offsetX: x, offsetY: y } = e;
 
@@ -24,4 +29,23 @@ function shadow(e) {
   ${xWalk}rem ${yWalk * -1}rem 0 #3862e2,
   ${xWalk * -1}rem ${yWalk * -1}rem #00FF00
   `;
+}
+
+function addOutline() {
+  text.style.outline = "3rem solid var(--black)";
+}
+
+function removeOutline() {
+  text.style.outline = "0";
+}
+
+function setMaxLength(e) {
+  if (text.textContent.length === 7 && e.key != "Backspace") {
+    e.preventDefault();
+  }
+}
+
+if (mq.matches) {
+  text.removeAttribute("contenteditable");
+  text.removeEventListener("click", addOutline);
 }

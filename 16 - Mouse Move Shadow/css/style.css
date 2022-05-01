@@ -1,17 +1,15 @@
 :root {
   --font-family: "Source Serif Pro", serif;
+  --black: #000000;
   --red: #ff0000;
   --pink: #fed3d3;
-  --yellow: #ffff00;
-  --purple: #9932cc;
-  --blue: #3862e2;
-  --green: #00ff00;
+  --selection-bg-clr: #0000002f;
 }
 
 * {
   margin: 0;
   padding: 0;
-  border: 0;
+  outline: 0;
   box-sizing: border-box;
 }
 
@@ -23,10 +21,10 @@ body {
   cursor: url(../img/cursor.png), auto;
   overflow: hidden;
   background-color: var(--pink);
+  user-select: none;
 }
 
 .hero {
-  user-select: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,6 +50,10 @@ body {
   transform: rotate(180deg);
 }
 
+.shape-fill {
+  fill: var(--red);
+}
+
 svg {
   position: relative;
   display: block;
@@ -59,32 +61,47 @@ svg {
   height: 61rem;
 }
 
-.shape-fill {
-  fill: var(--red);
-}
-
 .text {
   cursor: text;
   text-transform: uppercase;
   font: 800 90rem var(--font-family);
   text-shadow: 10rem 10rem 0 var(--red);
-  z-index: 100;
+  transition: 0.08s;
+  border-radius: 4rem;
+  z-index: 10;
+  max-width: 60%;
 }
 
-@media screen and (max-width: 800px) {
+.text::selection {
+  background-color: var(--selection-bg-clr);
+}
+
+@media screen and (max-width: 1090px) {
   html {
     font-size: 0.8px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 870px) {
   html {
     font-size: 0.6px;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 660px) {
   html {
     font-size: 0.4px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 0.3px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 0.2px;
   }
 }
