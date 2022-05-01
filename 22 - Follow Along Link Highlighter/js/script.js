@@ -1,3 +1,5 @@
+"use strict";
+
 const links = document.querySelectorAll("a");
 const span = document.createElement("span");
 span.classList = "highlight";
