@@ -1,12 +1,11 @@
 :root {
-  --primary-font-family: sans-serif;
-  --secondary-font-family: cursive;
-  --body-color: #ffd700;
+  --primary-font-family: "Open Sans", sans-serif;
+  --secondary-font-family: "Short Stack", cursive;
+  --white-color: #fffffff1;
+  --primary-color: #ffd700;
   --bg-color: #272727bf;
   --loader-bg-color: #060606;
   --border-color: #000000e1;
-  --white-color: #fffffff1;
-  --yellow-color: #ffd700;
   --shadow-color: #ffd900b6;
 }
 
@@ -28,8 +27,13 @@ html {
 }
 
 body {
-  background: url(../img/background.jpg) center/cover no-repeat var(--body-color);
+  background: url(../img/background.jpg) center/cover no-repeat
+    var(--primary-color);
   overflow: hidden;
+}
+
+#container {
+  padding: 0.5rem;
 }
 
 .keys {
@@ -59,19 +63,37 @@ kbd {
 }
 
 .sound {
-  color: var(--yellow-color);
+  color: var(--primary-color);
   text-transform: uppercase;
-  font: 1.3rem var(--primary-font-family);
+  font: 500 1.3rem var(--primary-font-family);
   padding-bottom: 1rem;
 }
 
-.playing {
+.playing,
+.key:active {
   transform: scale(1.1);
-  border: 0.4rem solid var(--yellow-color);
-  box-shadow: 0.1rem 0.1rem 1rem var(--shadow-color);
+  border: 0.3rem solid var(--primary-color);
+  box-shadow: 0 0 2rem var(--shadow-color);
 }
 
-/* cursor */
+.mobile {
+  font: 4rem var(--primary-font-family);
+  color: var(--primary-color);
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: var(--border-color);
+}
+
+/* cursor start */
 #cursor {
   position: absolute;
   border-radius: 50%;
@@ -80,12 +102,13 @@ kbd {
   z-index: 100;
   transition: all 0.1s linear;
   pointer-events: none;
-  border: 0.2rem solid var(--yellow-color);
+  border: 0.2rem solid var(--primary-color);
   box-shadow: 0 0 0.2rem var(--shadow-color);
   background-color: transparent;
 }
+/* cursor end */
 
-/* loader */
+/* loader start */
 .cssload-container {
   width: 100vw;
   height: 100vh;
@@ -120,8 +143,8 @@ kbd {
   height: 7.6rem;
   border-radius: 100%;
   border: 0.4rem solid transparent;
-  border-bottom: 0.4rem solid var(--yellow-color);
-  border-left: 0.4rem solid var(--yellow-color);
+  border-bottom: 0.4rem solid var(--primary-color);
+  border-left: 0.4rem solid var(--primary-color);
   animation: cssload-spinR 1.1s linear infinite;
 }
 
@@ -139,8 +162,8 @@ kbd {
   top: 11%;
   left: 11%;
   border: 0.3rem solid transparent;
-  border-top: 0.3rem solid var(--yellow-color);
-  border-right: 0.3rem solid var(--yellow-color);
+  border-top: 0.3rem solid var(--primary-color);
+  border-right: 0.3rem solid var(--primary-color);
   animation: cssload-spinL 0.4075s linear infinite;
   transform-origin: center center;
 }
@@ -151,7 +174,7 @@ kbd {
   top: 35.5%;
   left: 35.5%;
   background-color: transparent;
-  border: 0.2rem solid var(--yellow-color);
+  border: 0.2rem solid var(--primary-color);
 }
 
 @keyframes cssload-spinR {
@@ -161,16 +184,6 @@ kbd {
 
   to {
     transform: rotate(360deg);
-  }
-}
-
-@-o-keyframes cssload-spinR {
-  from {
-    -o-transform: rotate(0deg);
-  }
-
-  to {
-    -o-transform: rotate(360deg);
   }
 }
 
@@ -194,16 +207,6 @@ kbd {
   }
 }
 
-@-moz-keyframes cssload-spinR {
-  from {
-    -moz-transform: rotate(0deg);
-  }
-
-  to {
-    -moz-transform: rotate(360deg);
-  }
-}
-
 @keyframes cssload-spinL {
   from {
     transform: rotate(0deg);
@@ -211,16 +214,6 @@ kbd {
 
   to {
     transform: rotate(-360deg);
-  }
-}
-
-@-o-keyframes cssload-spinL {
-  from {
-    -o-transform: rotate(0deg);
-  }
-
-  to {
-    -o-transform: rotate(-360deg);
   }
 }
 
@@ -243,20 +236,15 @@ kbd {
     -webkit-transform: rotate(-360deg);
   }
 }
+/* loader end */
 
-@-moz-keyframes cssload-spinL {
-  from {
-    -moz-transform: rotate(0deg);
-  }
-
-  to {
-    -moz-transform: rotate(-360deg);
-  }
-}
-
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1007px) {
   html {
     font-size: 7px;
+  }
+
+  .mobile {
+    display: block;
   }
 }
 
@@ -268,6 +256,6 @@ kbd {
 
 @media screen and (max-width: 460px) {
   html {
-    font-size: 3.1px;
+    font-size: 3.3px;
   }
 }

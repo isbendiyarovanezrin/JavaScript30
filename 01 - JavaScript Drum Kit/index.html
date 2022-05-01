@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- title -->
     <title>JS Drum Kit</title>
 
     <!-- required meta tags -->
@@ -11,14 +12,27 @@
     <!-- favicon -->
     <link rel="icon" href="img/drum.png" />
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- style -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- cursor -->
+    <!-- cursor start -->
     <div id="cursor"></div>
+    <!-- cursor end -->
 
-    <!-- loader -->
+    <!-- loader start -->
     <div class="cssload-container">
       <ul class="cssload-flex-container">
         <li>
@@ -26,8 +40,9 @@
         </li>
       </ul>
     </div>
+    <!-- loader end -->
 
-    <div class="container">
+    <div id="container">
       <div class="keys">
         <div class="key" data-key="a">
           <kbd>A</kbd>
@@ -67,15 +82,17 @@
         </div>
       </div>
 
-      <audio src="sounds/boom.wav" data-key="a"></audio>
-      <audio src="sounds/clap.wav" data-key="s"></audio>
-      <audio src="sounds/hihat.wav" data-key="d"></audio>
-      <audio src="sounds/kick.wav" data-key="f"></audio>
-      <audio src="sounds/openhat.wav" data-key="g"></audio>
-      <audio src="sounds/ride.wav" data-key="h"></audio>
-      <audio src="sounds/snare.wav" data-key="j"></audio>
-      <audio src="sounds/tink.wav" data-key="k"></audio>
-      <audio src="sounds/tom.wav" data-key="l"></audio>
+      <audio src="sounds/boom.wav" data-key="a" preload="auto"></audio>
+      <audio src="sounds/clap.wav" data-key="s" preload="auto"></audio>
+      <audio src="sounds/hihat.wav" data-key="d" preload="auto"></audio>
+      <audio src="sounds/kick.wav" data-key="f" preload="auto"></audio>
+      <audio src="sounds/openhat.wav" data-key="g" preload="auto"></audio>
+      <audio src="sounds/ride.wav" data-key="h" preload="auto"></audio>
+      <audio src="sounds/snare.wav" data-key="j" preload="auto"></audio>
+      <audio src="sounds/tink.wav" data-key="k" preload="auto"></audio>
+      <audio src="sounds/tom.wav" data-key="l" preload="auto"></audio>
+
+      <p class="mobile">Visit in desktop for the best experience.</p>
     </div>
 
     <!-- jquery -->
