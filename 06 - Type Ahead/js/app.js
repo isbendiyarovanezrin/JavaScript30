@@ -1,5 +1,10 @@
 "use strict";
 
+const cursor = document.getElementById("cursor");
+const ul = document.querySelector(".suggestions");
+const searchInput = document.querySelector(".search-input");
+const cities = [];
+
 fetch(
   "https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json"
 )
@@ -12,10 +17,6 @@ fetch(
   .catch((error) => {
     console.error("Error:", error);
   });
-
-const cities = [];
-const ul = document.querySelector(".suggestions");
-const searchInput = document.querySelector(".search-input");
 
 searchInput.addEventListener("keyup", showMatches);
 
@@ -52,9 +53,7 @@ function numWithCommas(n) {
   return n.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-// cursor
-const cursor = document.getElementById("cursor");
-
+// cursor start
 document.addEventListener("mousemove", changeCursor);
 
 function changeCursor(e) {
@@ -72,3 +71,16 @@ document.querySelector(".search-input").addEventListener("mousemove", () => {
 document.querySelector(".search-input").addEventListener("mouseleave", () => {
   document.addEventListener("mousemove", changeCursor);
 });
+// cursor end
+
+// loader start
+$(window).on("load", () => {
+  setTimeout(removeLoader, 1960);
+});
+
+function removeLoader() {
+  $(".cssload-container").fadeOut(500, () => {
+    $(".cssload-container").remove();
+  });
+}
+// loader end

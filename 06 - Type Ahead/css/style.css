@@ -1,5 +1,5 @@
 :root {
-  --white-color: #fff;
+  --white-color: #ffffff;
   --grey-color: #efefef;
   --blue-color: #658aaf;
   --sapphire-blue-color: #395fa0;
@@ -22,35 +22,42 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--blue-color);
   overflow-x: hidden;
-}
-
-.custom-shape-divider-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 0.2rem);
-  height: 29rem;
-}
-
-.custom-shape-divider-bottom .shape-fill {
-  fill: var(--white-color);
+  background: linear-gradient(
+      135deg,
+      var(--blue-color) 2.1rem,
+      var(--word-bg-color) 2.2rem,
+      var(--word-bg-color) 2.4rem,
+      transparent 2.4rem,
+      transparent 6.7rem,
+      var(--word-bg-color) 6.7rem,
+      var(--word-bg-color) 6.9rem,
+      transparent 6.9rem
+    ),
+    linear-gradient(
+        225deg,
+        var(--blue-color) 2.1rem,
+        var(--word-bg-color) 2.2rem,
+        var(--word-bg-color) 2.4rem,
+        transparent 2.4rem,
+        transparent 6.7rem,
+        var(--word-bg-color) 6.7rem,
+        var(--word-bg-color) 6.9rem,
+        transparent 6.9rem
+      )
+      0 6.4rem,
+    var(--blue-color);
+  background-size: 6.4rem 12.8rem;
 }
 
 input {
@@ -137,7 +144,7 @@ span.population {
   background-color: var(--blue-color);
 }
 
-/* scrollbar */
+/* scrollbar start */
 ::-webkit-scrollbar {
   width: 1.5rem;
 }
@@ -152,8 +159,9 @@ span.population {
   border-radius: 1rem;
   background-color: var(--sapphire-blue-color);
 }
+/* scrollbar end */
 
-/* cursor */
+/* cursor start */
 #cursor {
   width: 0.5rem;
   height: 0.5rem;
@@ -167,8 +175,123 @@ span.population {
   outline: 0.7rem solid var(--sapphire-blue-color);
   box-shadow: 0 0 0.2rem var(--shadow-color2);
 }
+/* cursor end */
 
-/* media queries */
+/* loader start */
+.cssload-container {
+  top: 0;
+  z-index: 200;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: var(--border-color1);
+}
+
+.cssload-flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cssload-flex-container li {
+  height: 13.8rem;
+  width: 13.8rem;
+  padding: 1.4rem;
+  position: relative;
+  text-align: center;
+}
+
+.cssload-loading {
+  display: inline-block;
+  height: 11rem;
+  width: 11rem;
+  border-radius: 100%;
+  border: 0.6rem solid var(--blue-color);
+  animation: cssload-spinShrink 2s ease-in infinite alternate;
+}
+
+.cssload-loading:after {
+  content: "";
+  right: 1.8rem;
+  height: 2.8rem;
+  width: 2.8rem;
+  display: block;
+  background-color: var(--blue-color);
+  position: absolute;
+  border-radius: 100%;
+  animation: cssload-dotShrink 2s ease-in infinite alternate;
+}
+
+.cssload-loading:before {
+  content: "";
+  height: 1.4rem;
+  width: 1.4rem;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 0.3rem solid var(--blue-color);
+  transform: translate(-50%, -50%);
+  animation: cssload-ring 3s ease infinite;
+}
+
+@keyframes cssload-spinShrink {
+  from {
+    width: 11rem;
+    height: 11rem;
+    transform: rotate(0deg);
+  }
+
+  to {
+    width: 1.4rem;
+    height: 1.4rem;
+    transform: rotate(1080deg);
+    margin-top: 4.1rem;
+  }
+}
+
+@keyframes cssload-dotShrink {
+  from {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
+
+  to {
+    height: 0.4rem;
+    width: 0.4rem;
+    right: 0;
+  }
+}
+
+@keyframes cssload-ring {
+  0%,
+  50%,
+  100% {
+    opacity: 0;
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  51% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0;
+    width: 13.8rem;
+    height: 13.8rem;
+  }
+}
+/* loader end */
+
+/* media queries start */
 @media screen and (max-width: 900px) {
   html {
     font-size: 8px;
@@ -192,3 +315,4 @@ span.population {
     font-size: 5px;
   }
 }
+/* media queries end */

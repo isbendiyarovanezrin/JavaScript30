@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- title -->
     <title>Type Ahead</title>
 
     <!-- required meta tags -->
@@ -23,29 +24,37 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- cursor start -->
     <div id="cursor"></div>
-    <div class="custom-shape-divider-bottom">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-          class="shape-fill"
-        ></path>
-      </svg>
+    <!-- cursor end -->
+
+    <!-- loader start -->
+    <div class="cssload-container">
+      <ul class="cssload-flex-container">
+        <li>
+          <span class="cssload-loading"></span>
+        </li>
+      </ul>
     </div>
+    <!-- loader end -->
+
     <form class="search-form">
-      <input type="search" class="search-input" placeholder="City or State" />
+      <input
+        type="search"
+        class="search-input"
+        placeholder="City or State"
+        spellcheck="false"
+      />
       <ul class="suggestions">
         <li>Filter for a city</li>
         <li>or a state</li>
       </ul>
     </form>
 
-    <!-- javascript -->
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- script js -->
     <script src="js/app.js"></script>
   </body>
 </html>
