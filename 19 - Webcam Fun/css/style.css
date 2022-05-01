@@ -137,7 +137,7 @@ video {
   transform: rotate(-14deg);
 }
 
-/* scrollbar */
+/* scrollbar start */
 ::-webkit-scrollbar {
   width: 1.5rem;
 }
@@ -155,8 +155,9 @@ video {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--scrollbar-hover-color);
 }
+/* scrollbar end */
 
-/* loader */
+/* loader start */
 #loadingDiv {
   top: 0;
   left: 0;
@@ -175,8 +176,9 @@ video {
   height: 7rem;
   background: center / contain no-repeat url(../img/loader.gif);
 }
+/* loader end */
 
-/* media queries */
+/* media queries start */
 @media screen and (max-width: 700px) {
   #canvas {
     height: 70vh;
@@ -198,10 +200,11 @@ video {
 
 @media screen and (max-width: 500px) {
   html {
-    font-size: 9px;
+    font-size: 8.7px;
   }
 
   #canvas {
     height: 65vh;
   }
 }
+/* media queries end */

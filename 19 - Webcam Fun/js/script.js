@@ -21,6 +21,7 @@ function getVideo() {
 }
 
 function paintCanvas() {
+  hello.currentTime = 1.5;
   hello.play();
   const width = video.videoWidth;
   const height = video.videoHeight;
@@ -66,7 +67,7 @@ $("html").css(
   "hidden",
   setTimeout(() => {
     $("html").css("overflow-y", "visible");
-  }, 1800)
+  }, 1700)
 );
 
 $(window).on("load", () => {
