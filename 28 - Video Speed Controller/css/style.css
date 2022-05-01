@@ -1,8 +1,8 @@
 :root {
   --yellow: #ffb100;
   --red: #c60900;
-  --white: #fff;
-  --black: #000;
+  --white: #ffffff;
+  --black: #000000;
   --hover-color: #e5ff002c;
   --box-shadow: 0 0.2rem 1rem #000000b0;
   --primary-font-family: sans-serif;
@@ -25,7 +25,6 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  overflow: hidden;
   background: no-repeat 0 33% / cover url(../img/freddie.jpg) var(--yellow);
   background-blend-mode: darken;
 }
@@ -108,7 +107,7 @@ p:last-child {
   background-color: var(--yellow);
 }
 
-/* loader */
+/* loader start */
 #loadingDiv {
   display: flex;
   align-items: center;
@@ -125,7 +124,9 @@ p:last-child {
   height: 7rem;
   background: center / contain no-repeat url(../img/loader.gif);
 }
+/* loader end */
 
+/* media queries start */
 @media screen and (max-width: 1260px) {
   .text {
     display: none;
@@ -153,3 +154,4 @@ p:last-child {
     font-size: 5.7px;
   }
 }
+/* media queries end */
