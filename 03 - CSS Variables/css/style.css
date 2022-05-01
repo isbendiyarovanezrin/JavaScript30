@@ -8,6 +8,11 @@
   --spacing: 0px;
   --blur: 0px;
   --color: #461301;
+  --bg-color: #46130181;
+  --img-bg-color: #4613018c;
+  --loader-bg-color: #80675b;
+  --selection-color: #f5f5f5;
+  --font-family: "Patrick Hand", cursive;
 }
 
 html {
@@ -21,9 +26,10 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
-  font: 600 3rem "Patrick Hand", cursive;
-  background: url(../img/nature.jpeg) right top/cover no-repeat #46130181;
+  font: 600 3rem var(--font-family);
+  background: url(../img/nature.jpeg) right top/cover no-repeat var(--bg-color);
   background-blend-mode: darken;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .container {
@@ -37,7 +43,7 @@ img {
   object-fit: cover;
   user-select: none;
   padding: var(--spacing);
-  background-color: #4613018c;
+  background-color: var(--img-bg-color);
   border: 1.8rem solid var(--color);
   filter: blur(var(--blur)) contrast(110%);
 }
@@ -52,9 +58,28 @@ input[type="range"] {
 }
 
 ::selection {
-  color: #f5f5f5;
+  color: var(--selection-color);
   background-color: var(--color);
 }
+
+/* loader start */
+#loadingDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: var(--loader-bg-color);
+}
+
+.loader {
+  width: 6.5rem;
+  height: 6.5rem;
+  background: center / contain no-repeat url(../img/loader.gif);
+}
+/* loader end */
 
 @media screen and (max-width: 900px) {
   html {
