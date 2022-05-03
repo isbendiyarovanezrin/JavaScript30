@@ -96,4 +96,11 @@
 
 ![line](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=4)
 
+<br>
+
+<h6>
+Yalnız loader-də jQuery-dən istifadə olunub. <br>
+Onu da əlavə olaraq yazdığım üçün istifadə etdim.
+</h6>
+
 </div>
