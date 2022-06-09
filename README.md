@@ -2,7 +2,7 @@
 
 ### "Always bet on [JavaScript](https://youtube.com/playlist?list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH "Click me! 😍")."
 
-<p align="end"><em>━ Brendan Eich&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em></p>
+<p align="end"><em>━ Brendan Eich&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em></p>
 
 [![js30](https://i.postimg.cc/8cpWXYyY/js30.png "Build things. Lots of things. Build 1,000 things. Keep it up and don't stop.")](https://javascript30.com)
 
